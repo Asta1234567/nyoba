@@ -1,9 +1,278 @@
-<form action="/submit">
-  <label for="name">Nama Pengguna:</label>
-  <input type="text" id="name" name="name">
-  <br>
-  <label for="email">Kata Sandi:</label>
-  <input type="email" id="email" name="email">
-  <br>
-  <input type="submit" value="Login">
-</form>
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: midnightblue; 
+            --secondary-color: #002147;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --white-bg: #fff;
+        }
+
+        body {
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b0c4de;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: var(--white-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item-info {
+            flex-grow: 1;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .menu-item p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        form {
+            margin-top: 40px;
+            background-color: #fcfcfc;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        .form-item-select {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-item-select input {
+            width: auto;
+            margin-left: 10px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Menu Kami</h1>
+            <p>Pilih hidangan favorit Anda dan pesan dengan mudah.</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pilihan Makanan</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Nasi Goreng Spesial</h3>
+                        <p>Nasi goreng dengan telur, ayam suwir, dan kerupuk.</p>
+                    </div>
+                    <span class="price">Rp 25.000</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Mie Ayam Bakso</h3>
+                        <p>Mie dengan potongan ayam, bakso sapi, dan pangsit goreng.</p>
+                    </div>
+                    <span class="price">Rp 22.000</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Soto Ayam Lamongan</h3>
+                        <p>Soto kuah kuning segar dengan suwiran ayam, telur, dan koya.</p>
+                    </div>
+                    <span class="price">Rp 20.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Pilihan Minuman</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Es Teh Manis</h3>
+                        <p>Teh segar dengan es dan gula.</p>
+                    </div>
+                    <span class="price">Rp 8.000</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Jus Jeruk</h3>
+                        <p>Jus segar dari buah jeruk asli.</p>
+                    </div>
+                    <span class="price">Rp 12.000</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Kopi Latte Panas</h3>
+                        <p>Espresso dengan susu steamed yang lembut.</p>
+                    </div>
+                    <span class="price">Rp 15.000</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" method="post">
+            <h2>Formulir Pemesanan</h2>
+            <p>Centang menu yang ingin Anda pesan.</p>
+            
+            <div class="form-group">
+                <label>Pilih Makanan</label>
+                <div class="form-item-select">
+                    <input type="checkbox" id="nasi-goreng" name="pesanan" value="nasi-goreng">
+                    <label for="nasi-goreng">Nasi Goreng Spesial</label>
+                </div>
+                <div class="form-item-select">
+                    <input type="checkbox" id="mie-ayam" name="pesanan" value="mie-ayam">
+                    <label for="mie-ayam">Mie Ayam Bakso</label>
+                </div>
+                <div class="form-item-select">
+                    <input type="checkbox" id="soto-ayam" name="pesanan" value="soto-ayam">
+                    <label for="soto-ayam">Soto Ayam Lamongan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Pilih Minuman</label>
+                <div class="form-item-select">
+                    <input type="checkbox" id="es-teh" name="pesanan" value="es-teh">
+                    <label for="es-teh">Es Teh Manis</label>
+                </div>
+                <div class="form-item-select">
+                    <input type="checkbox" id="jus-jeruk" name="pesanan" value="jus-jeruk">
+                    <label for="jus-jeruk">Jus Jeruk</label>
+                </div>
+                <div class="form-item-select">
+                    <input type="checkbox" id="kopi-latte" name="pesanan" value="kopi-latte">
+                    <label for="kopi-latte">Kopi Latte Panas</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama Pemesan</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="meja">Meja Nomor</label>
+                <input type="number" id="meja" name="jumlah" min="1" max="20" required>
+            </div>
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </div>
+
+</body>
+</html>
